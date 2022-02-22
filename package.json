@@ -2,7 +2,7 @@
   "name": "node-sass-json-importer",
   "version": "0.0.0-development",
   "description": "Allows importing json in sass files parsed by node-sass.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "scripts": {
     "test": "mocha --require @babel/register",
     "compile": "mkdirp dist && babel src -d dist",
-    "prepublishOnly": "npm run compile"
+    "prepare": "npm run compile"
   },
   "dependencies": {
     "is-there": "^4.4.4",

@@ -10,7 +10,6 @@
   },
   "keywords": [
     "sass",
-    "node-sass",
     "importer",
     "json"
   ],
@@ -18,9 +17,6 @@
     "test": "mocha --require @babel/register",
     "compile": "mkdirp dist && babel src -d dist",
     "prepublishOnly": "npm run compile"
-  },
-  "peerDependencies": {
-    "node-sass": ">=3.5.3"
   },
   "dependencies": {
     "is-there": "^4.4.4",
